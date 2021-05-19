@@ -1,0 +1,100 @@
+.header
+    background-color: $header-bg
+    background-image: url("../img/header/header-bg.png")
+    height: 457px
+    padding-top: 3.75rem
+    &-inner
+        display: flex
+        justify-content: flex-start
+        align-items: center
+    &-logo
+        display: flex
+        align-content: center
+        flex-basis: 29%
+        margin-right: 10.5625rem
+        &__image
+            width: 54px
+            height: 49px
+        &__text
+            font-family: "Trajan Pro 3"
+            font-size: 1em
+            line-height: 1.5em
+            letter-spacing: 0.15px
+        &__line
+            height: 3.3125em
+            width: 1px
+            background-color: #000
+            margin-left: 20px
+            margin-right: 23px
+    &-contacts
+        flex-basis: 10.625rem
+        margin-right: 19.875rem
+        &__tel
+            font-family: "Trajan Pro 3"
+            display: inline-block
+            font-size: 0.875em
+            position: relative
+            line-height: 1.43
+            margin-bottom: 1.5rem
+            &::before
+               content: url('../img/header/call-small.png') 
+               position: absolute
+               bottom: 0
+               width: 1.625rem
+               left: -2.5625rem
+        &__email
+            font-family: "Trajan Pro 3"
+            font-size: 1rem
+            position: relative
+            &::before
+               content: url('../img/header/email.png') 
+               position: absolute
+               bottom: -0.75rem
+               width: 1.625rem
+               left: -2.5625rem
+    &-call
+        position: relative
+        max-height: 5rem
+        &::before
+            content: url("../img/header/call-big.png")
+            position: absolute
+            height: 5rem
+            left: -8.75rem
+            top: 5px
+            
+        &__title
+            font-family: 'Uni Neue Bold'
+            font-size: 1.78125rem
+            display: block
+            width: 15.038125rem
+            margin-bottom: 0.5rem
+        &__call
+            text-decoration: none
+            text-align: center
+            display: inline-block
+            color: #fff
+            font-family: 'Uni Neue Regular'
+            font-size: 0.9375rem
+            background-color: #2352e6
+            border-radius: 6px
+            padding: 10px 24px 
+            width: 15.038125rem
+            position: relative
+            &::after
+                position: absolute
+                content: 'Позвоните мне бесплатно'
+                font-family: 'Uni Neue Regular'
+                font-size: 0.9375rem
+                color: #fff
+                background-color: #85bf31
+                border-radius: 6px
+                padding: 10px 24px 
+                width: 15.038125rem
+                height: 100%
+                top: 0
+                left: 0
+                opacity: 0
+                transition: .3s
+            &:hover
+                &::after
+                    opacity: 1
